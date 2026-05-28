@@ -8,5 +8,7 @@ import React, { useState } from 'react'
 export function BookingsView({ service }: { service: LazloService }) {
 	const [bookings, setBookings] = useState<Booking[]>([])
 	const client: BookingClient = createBookingClient(service)
+	void client
+	void setBookings
 	return React.createElement('div', null, bookings.length)
 }

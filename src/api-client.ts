@@ -9,5 +9,6 @@ export function createClient(config: ApiConfig, proxyConfig: ProxyConfig): Proxy
 }
 
 export async function fetchData(url: string, client: ProxyClient) {
-	return axios.get(url, { proxy: client.proxyOptions() })
+	const response = await axios.get(url, { proxy: client.proxyOptions() })
+	return response.data
 }

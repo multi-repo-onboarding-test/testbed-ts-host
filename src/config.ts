@@ -9,3 +9,7 @@ export function loadAppConfig(path: string): FlexiConfig {
 export function validateConfig(config: FlexiConfig, schema: FlexiSchema): boolean {
 	return validateSchema(config, schema)
 }
+
+export function loadAndValidate(path: string, schema: FlexiSchema): boolean {
+	return validateConfig(loadAppConfig(path), schema)
+}

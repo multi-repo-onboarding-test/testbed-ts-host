@@ -11,3 +11,7 @@ export function runMarketingPipeline(dag: MarketingDag) {
 export function runFinancePipeline(dag: FinanceDag) {
 	return triggerWorkflow(lodash.kebabCase(dag.id))
 }
+
+export function runAll(dags: { marketing: MarketingDag; finance: FinanceDag }) {
+	return Promise.all([runMarketingPipeline(dags.marketing), runFinancePipeline(dags.finance)])
+}
