@@ -1,0 +1,20 @@
+{
+  "name": "testbed-ts-host",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@multi-repo-onboarding-test/testbed-api-proxy": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-api-proxy-config": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-flexiconf": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-getaways": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-lazlo": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-archived-shell": "^1.0.0",
+    "@multi-repo-onboarding-test/testbed-placeholder-stub": "^1.0.0",
+    "testbed-composer3-workflows": "^1.0.0",
+    "testbed-dags-marketing": "^1.0.0",
+    "testbed-dags-finance": "^1.0.0",
+    "axios": "^1.6.0",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0"
+  }
+}
