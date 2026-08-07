@@ -1,0 +1,5 @@
+knowledge_base:
+  linked_repository_access: private_repositories
+  linked_repositories:
+    - repository: multi-repo-onboarding-test/testbed-flexiconf
+      instructions: Synthetic private repository used only for linked-access E2E validation.
