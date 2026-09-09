@@ -5,6 +5,9 @@ import type { FinanceDag } from 'testbed-dags-finance'
 import lodash from 'lodash'
 
 export function runMarketingPipeline(dag: MarketingDag) {
+	if (dag.id.trim().length === 0) {
+		throw new Error('Marketing workflow ID is required')
+	}
 	return triggerWorkflow(dag.id)
 }
 
