@@ -1,0 +1,8 @@
+name: REV-763 dependency fixture
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  shared-contract:
+    uses: multi-repo-onboarding-test/core/.github/workflows/rev763-reusable.yml@6468a5465455e981dd1d3a624984deed1202395f
